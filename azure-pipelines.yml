@@ -1,9 +1,8 @@
 # Starter pipeline
-- task: AzureAppServiceSettings@1
+- task: NodeTool@0
   inputs:
-    azureSubscription: 'Free Trial(9ca8ab25-de27-4286-814c-2d0366589577)'
-    appName: 'webnodejs'
-    resourceGroupName: 'az'
+    versionSpec: '6.x'
+    checkLatest: true
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
